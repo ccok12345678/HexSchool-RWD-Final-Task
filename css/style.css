@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+/* layout */
+.container {
+  width: 100%;
+  background: #2e2e2e;
+}
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+  background: #efe9e7;
+  font-family: MicrosoftJhengHeiRegular, sans-serif;
+  font-size: 16px;
+  color: #3D1101;
+}
+.header {
+  background: url(../images/header_desktop.png);
+  padding-bottom: 145px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 33px;
+  background:  rgba(0, 0, 0, 0.75);
+}
+.logo {
+  background: url(../images/logo.svg) no-repeat 50% 50%;
+  width: 120px;
+  height: 24px;
+  padding: 16px 2px;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  display: block;
+  color: #fff;
+  padding: 18px 15px;
+}
+.menu li a:hover {
+  background: #efe9e7;
+  color: #000;
+}
+.slogan {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 460px;
+  margin-top: 67px;
+  padding-top: 20px;
+  padding-bottom: 26px;
+}
+.slogan h2 {
+  font-size: 36px;
+  padding-bottom: 16px;
+}
+.slogan h3 {
+  line-height: 1.5em;
+}
+.main {
+  padding: 50px 0px;
+}
+.footer {
+  display: flex;
+  justify-content: start;
+  padding: 0 50px 25px;
+}
+.inform {
+  width: 30%;
+  margin-right: 3%;
+}
+.inform h3 {
+  color: #3d1101;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.inform p {
+  line-height: 1.1em;
+}
+.inform ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.inform li a {
+  color: #3d1101;
+  line-height: 1.1em;
+}
+.inform li a:hover {
+  text-decoration: underline;
+}
+.community {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.community h2 {
+  background: url(../images/logo_l@svg.svg) no-repeat;
+  width: 245px;
+  height: 50px;
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 22px;
+}
+.community ul {
+  display: flex;
+}
+.community a{
+  display: block;
+  width: 31px;
+  margin-left: 12px;
+}
