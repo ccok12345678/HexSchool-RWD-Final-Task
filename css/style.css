@@ -57,6 +57,10 @@ a {
   text-decoration: none;
   color: #3d1101;
 }
+p {
+  font-size: 16px;
+  line-height: 1.2em;
+}
 /* layout */
 .container {
   width: 100%;
@@ -66,8 +70,7 @@ a {
   width: 85%;
   margin: 0 auto;
   background: #efe9e7;
-  font-family: MicrosoftJhengHeiRegular, sans-serif;
-  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
   color: #3D1101;
 }
 .header {
@@ -172,4 +175,173 @@ a {
   display: block;
   width: 31px;
   margin-left: 12px;
+}
+/* index.html */
+.feature-headline {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.feature-headline .line {
+  width: 15%;
+  height: 1px;
+  background: #979797;
+}
+.feature-headline h3 {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 0px 13px;
+}
+.feature-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.feature-info li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature-info li img {
+  margin-bottom: 20px;
+}
+.feature-info li h3 {
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+.feature-info li p {
+  font-size: 16px;
+}
+.theChef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d1011;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.theChef img {
+  width: 43%;
+  margin-left: 5%;
+}
+.chef-info {
+  width: 43%;
+  margin: 3% 5% 3% 4%;
+  color: #efe9e7;
+}
+.chef-info h3 {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.chef-info h4 {
+  margin-bottom: 16px;
+}
+.review {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+.review h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.review ul {
+  display: flex;
+  justify-content: space-between;
+}
+.review ul li {
+  display: flex;
+  width: 30%;
+  align-items: end;
+}
+.review-content {
+  padding-top: 23px;
+  margin-left: 13px;
+  line-height: 24px;
+}
+.review-content h4 {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+.review-content p:last-child {
+  text-align: right;
+  margin-top: 16px;
+}
+
+.booking {
+  padding: 50px 4%;
+  background: rgba(250, 250, 250, 0.7);
+}
+.booking h3 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin-bottom: 38px;
+}
+.booking-info {
+  display: flex;
+  justify-content: space-around;
+}
+.booking-info iframe {
+  width: 46%;
+  outline: 1px solid #ccc;
+}
+.booking-info form {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+.booking-info input {
+  width: 100%;
+  margin: 6px 0 12px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  padding: 8px;
+}
+.booking-info input:hover {
+  border: 1px solid #57a5ff;  
+}
+.booking-info input:focus {
+  outline: none;
+  border: 1.5px solid #57a5ff;
+  padding: 7.5px;
+}
+
+.booking-info .vegan p {
+  font-size: 14px;
+}
+.booking-info .vegan input {
+  width: 16px;
+  box-shadow: none;
+  margin-right: 36px;
+}
+.booking-info .vegan input:hover {
+  outline: 2px dotted #57a5ff;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn button {
+  width: 70px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 11px;
+}
+.btn button.submit {
+  background: #f56c23;
+}
+.btn button.submit:hover {
+  background: #e96925;
 }
