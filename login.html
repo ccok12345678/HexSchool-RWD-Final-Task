@@ -16,10 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/all.js"></script>
@@ -47,16 +44,28 @@
       <main class="main">
         <div class="login">
           <h2>六角西餐廳</h2>
-          <h3>享受美食好味道</h3>
+          <h4>享受美食好味道</h4>
           <form>
             <h3>LOGIN</h3>
             <label for="email-login">Email Address*</label>
-            </i><input type="email" name="email-login" id="email-login">
+            <div class="form-group">
+              <label for="email-login">
+                <i class="far fa-envelope"></i>
+              </label>
+              <input type="email" name="email-login" id="email-login" class="email">
+            </div>
             <label for="password">Password*</label>
-            <input type="password" name="password" id="password">
+            <div class="form-group">
+              <label for="password">
+                <i class="fas fa-lock"></i>
+              </label>
+              <input type="password" name="password" id="password" class="password">
+            </div>
             <a href="#">忘記密碼？</a>
-            <button>註冊</button>
-            <input type="submit" value="登入">
+            <div class="btn btn-login">
+              <button class="pure-button">註冊</button>
+              <button type="submit" class="pure-button">登入</button>
+            </div>
           </form>
         </div>
   
