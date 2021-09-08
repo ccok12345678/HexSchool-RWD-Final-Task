@@ -68,11 +68,16 @@ p {
   background: #2e2e2e;
 }
 .wrap {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   background: #efe9e7;
   font-family: 'Noto Sans TC', sans-serif;
   color: #3D1101;
+}
+@media(max-width: 768px) {
+  .wrap {
+    width: 100%;
+  }
 }
 .header {
   background: url(../images/header_desktop.png);
@@ -82,9 +87,16 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding-left: 40px;
   padding-right: 33px;
   background:  rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 768px) {
+  .top-bar {
+    padding-left: 13px;
+    padding-right: 0;
+  }
 }
 .logo {
   background: url(../images/logo.svg) no-repeat 50% 50%;
@@ -94,6 +106,14 @@ p {
   overflow: hidden;
   text-indent: 110%;
   white-space: nowrap;
+}
+.open-menu {
+  display: none;
+  color: #fff;
+  font-size: 25px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  margin-right: 5px;
 }
 .menu {
   display: flex;
@@ -106,6 +126,33 @@ p {
 .menu li a:hover {
   background: #efe9e7;
   color: #000;
+}
+@media (max-width: 767px) {
+  .menu {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    background:  rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 30;
+    top: 56px;
+    left: 0;
+    right: 0;
+  }
+  .show .menu {
+    height: 160px;
+  }
+  .menu a {
+    border-top: 1px dotted #fff;
+    text-align: center;
+  }
+  .menu li:last-child a {
+    border-bottom: 1px solid #fff;
+  }
+  .open-menu {
+    display: block;
+  }
 }
 .slogan {
   background: rgba(0, 0, 0, 0.35);
@@ -129,8 +176,19 @@ p {
 }
 .footer {
   display: flex;
-  justify-content: start;
+  /* justify-content: start; */
   padding: 0 50px 25px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 1% 25px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
 }
 .inform {
   width: 30%;
@@ -155,19 +213,23 @@ p {
 .inform li a:hover {
   text-decoration: underline;
 }
+@media (max-width: 767px) {
+  .inform {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+}
 .community {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 .community h2 {
-  background: url(../images/logo_l@svg.svg) no-repeat;
-  width: 245px;
-  height: 50px;
-  text-indent: 110%;
-  overflow: hidden;
-  white-space: nowrap;
-  padding-bottom: 22px;
+  font-size: 49px;
+  font-weight: 900;
+  margin-bottom: 22px;
 }
 .community ul {
   display: flex;
@@ -177,6 +239,13 @@ p {
   width: 31px;
   margin-left: 12px;
 }
+@media (max-width: 767px) {
+  .community {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 
 /* index.html */
 .feature-headline {
