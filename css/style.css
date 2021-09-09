@@ -85,7 +85,7 @@ p {
 }
 @media (max-width: 767px) {
   .header {
-    background: url(../images/header_mobile.png);
+    background: url(../images/header_mobile.png) no-repeat center;
     padding-top: 90px;
   }
 }
@@ -179,7 +179,6 @@ p {
   padding-top: 20px;
   padding-bottom: 26px;
 }
-
 .slogan-header {
   display: flex;
   justify-content: center;
@@ -500,6 +499,7 @@ p {
     margin-bottom: 30px;
   }
   .booking-info form {
+    margin: 0 auto;
     width: 95%;
   }
 }
