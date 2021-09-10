@@ -11,9 +11,13 @@ $(document).ready(function () {
     e.preventDefault();
     $('body').addClass('open-aside');
   });
-  $('.close, .aside-bg').click(function (e) { 
+
+  //  關閉選單
+  $('.close-aside, .menu-bg').click(function (e) { 
     e.preventDefault();
-    $('body').removeClass('open-aside');
+    $('body').removeClass('open-aside')
+      .removeClass('show');
+
   });
 
 });
